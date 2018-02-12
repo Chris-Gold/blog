@@ -2,8 +2,8 @@
 include 'link_db.php';
 
 //Affichage des articles par date de modification
-$reqAffDown = "SELECT *, SUBSTR(texte 10) FROM article ORDER BY date_modif DESC LIMIT 5";
-$reqAffUp = "SELECT *, SUBSTR(texte, 1, 10) FROM article ORDER BY date_modif ASC LIMIT 5";
+$reqAffDown = "SELECT * FROM article ORDER BY date_modif DESC LIMIT 5";
+$reqAffUp = "SELECT * FROM article ORDER BY date_modif ASC LIMIT 5 ";
 
 //Affichage les articles de l'auteur...
 $reqFiltNom = "SELECT * FROM article WHERE article.auteur= ";
@@ -17,9 +17,6 @@ $reqFiltCat = "SELECT * FROM article WHERE article.categorie= ";
 $reqFiltCatUp = "SELECT * FROM article GROUP BY categorie ASC";
 $reqFiltCatDown = "SELECT * FROM article GROUP BY categorie DESC";
 
-
-
-
 $result = mysqli_query($cnx, $reqAffUp);
 
 if(mysqli_num_rows($result) > 0){
@@ -27,7 +24,7 @@ if(mysqli_num_rows($result) > 0){
     echo "<li class=\"list-group-item disabled\">".$row['titre']."</li>";
     echo "<li class=\"list-group-item\">Categorie: ".$row['categorie']."</li>";
     echo "<li class=\"list-group-item \">".$row['auteur']." a creer cet article le ".$row['date_crea']."</li>";
-    echo "<li class=\"list-group-item \">".$row['texte']."</li>";
+    echo "<li class=\"list-group-item \">".substr($row['texte'],0,100)."</li>";
     echo "<br>";
   };
 }
