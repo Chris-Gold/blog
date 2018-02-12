@@ -1,7 +1,7 @@
 <?php
 $serveur = "localhost";
-$usr= "root";
-$password = "";
+$usr= "csa";
+$password = "aformac87";
 $dbName= "blog_af";
 
 $cnx = mysqli_connect($serveur, $usr, $password, $db_name);
