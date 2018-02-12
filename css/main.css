@@ -1,5 +1,16 @@
-.main-container{
+.main-container {
   max-width: 1700px;
   margin-left: auto;
-  margin-right: auto;
-}
+  margin-right: auto; }
+
+#idheadmil {
+  font-size: 37px;
+  font-weight: bold;
+  padding: 15px;
+  margin: 10px;
+  color: #f99533; }
+
+#idbody {
+  background-color: #bc3203; }
+
+/*# sourceMappingURL=main.css.map */

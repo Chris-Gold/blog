@@ -25,7 +25,6 @@ if(mysqli_num_rows($result) > 0){
     echo "<li class=\"list-group-item\">Categorie: ".$row['categorie']."</li>";
     echo "<li class=\"list-group-item \">".$row['auteur']." a creer cet article le ".$row['date_crea']."</li>";
     echo "<li class=\"list-group-item \">".substr($row['texte'],0,100)."</li>";
-    echo "<br>";
   };
 }
 ?>
