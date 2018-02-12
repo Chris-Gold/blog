@@ -5,8 +5,8 @@ $password = "";
 $dbName= "blog_af";
 
 $cnx = mysqli_connect($serveur, $usr, $password, $db_name);
-if(!$link){
-  echo "ca va pas!!"
+if(!$cnx){
+  echo "ca va pas!!";
 }
 else{
   echo "ouai, c'est cool!!";
