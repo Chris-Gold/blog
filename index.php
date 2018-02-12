@@ -1,3 +1,5 @@
+<?php include "php/link_db.php" ?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -5,7 +7,7 @@
     <?php include 'includes/header.html'  ?>
   </head>
   <body>
-<ul id="id_list_acc" /ul>   
+<ul id="id_list_acc" /ul>
 <?php include 'includes/footer.html'  ?>
   </body>
 </html>
