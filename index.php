@@ -5,8 +5,14 @@
     <?php include 'includes/header.html'  ?>
   </head>
   <body>
-    
-<ul id="id_list_acc" /ul>
-<?php include 'includes/footer.html'  ?>
+      <div id="id_site" class="main-container">
+        <div class="container">
+          <div class="row">
+            <ul id="id_list_acc" /ul>
+          </div>
+        </div>
+      </div>
+      <!-- FOOTER -->
+      <?php include 'includes/footer.html'  ?>
   </body>
 </html>
