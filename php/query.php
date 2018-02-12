@@ -1,1 +1,1 @@
-<?php echo 'Ok' ?>
+<?php echo 'FirsttestSZ' ?>
