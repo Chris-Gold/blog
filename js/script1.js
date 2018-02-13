@@ -47,7 +47,7 @@ function ajax_add_article(){
 }
 
 function ajax_add_categorie(){
-  var categorie = 'Jeux';
+  var categorie = $('#cat_name').val();
   $.ajax({
     url:'php/add_categorie.php',
     data: {categorie:categorie},
