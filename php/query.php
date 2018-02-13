@@ -18,13 +18,19 @@ $reqFiltCatUp = "SELECT * FROM article GROUP BY categorie ASC";
 $reqFiltCatDown = "SELECT * FROM article GROUP BY categorie DESC";
 
 $result = mysqli_query($cnx, $reqAffUp);
+//Affiche la liste des articles
 
 if(mysqli_num_rows($result) > 0){
   while ($row = mysqli_fetch_assoc($result)){
-    echo "<li class=\"list-group-item disabled\">".$row['titre']."</li>";
+    echo "<div id=\"".$row['id_article']."\" onclick=\"ajax_aff_complet(this.id)\">";
+    echo "<li class=\"list-group-item disabled\">Article n°".$row['id_article']." : ".$row['titre']."</li>";
     echo "<li class=\"list-group-item\">Categorie: ".$row['categorie']."</li>";
     echo "<li class=\"list-group-item \">".$row['auteur']." a creer cet article le ".$row['date_crea']."</li>";
-    echo "<li class=\"list-group-item \">".substr($row['texte'],0,100)."</li>";
+    echo "<li class=\"list-group-item \">".substr($row['texte'],0,100)."...</li>";
+    echo "</div>";
   };
 }
+
+
+
 ?>
