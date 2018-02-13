@@ -30,17 +30,17 @@ function ajax_aff_complet(id_article){
 }
 
 function ajax_add_article(){
-  var titre = 'test1';
-  var text = 'bonjour et bienvenue';
-  var auteur = 'Chris';
-  var categorie = 'Sport';
+  var titre = $('#titre_art').val();
+  var text = $('#text_art').val();
+  var auteur = $('#inputGroupSelect01 option:selected').text();
+  var categorie = $('#inputGroupSelect02 option:selected').text();
   $.ajax({
     url:'php/add_article.php',
     data: {titre:titre,text:text,auteur:auteur,categorie:categorie},
     type: 'post',
     success:function(output){
       //$('#id_main_aff').html(output);
-      alert(output);
+      //alert(output);
     }
   });
 }
