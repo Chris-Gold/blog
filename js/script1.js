@@ -2,6 +2,7 @@
 $(document).ready(function(){
   ajax_aff_acceuil();
   ajax_add_article();
+  ajax_add_categorie();
 });
 //Affichage général
 function ajax_aff_acceuil(){
@@ -38,6 +39,19 @@ function ajax_add_article(){
     success:function(output){
       //$('#id_main_aff').html(output);
       alert("add done");
+    }
+  });
+}
+
+function ajax_add_categorie(){
+  var categorie = 'Jeux';
+  $.ajax({
+    url:'php/add_categorie.php',
+    data: {categorie:categorie},
+    type: 'post',
+    success:function(output){
+      //$('#id_main_aff').html(output);
+      alert(output);
     }
   });
 }
