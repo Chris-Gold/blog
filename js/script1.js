@@ -2,11 +2,9 @@
 $(document).ready(function(){
   ajax_aff_acceuil();
   ajax_add_article();
-<<<<<<< HEAD
   ajax_add_categorie();
-=======
   ajax_add_auteur();
->>>>>>> 59bb8755460ee45d69c0097dbbc338be8a6e2bb8
+
 });
 //Affichage général
 function ajax_aff_acceuil(){
@@ -42,7 +40,7 @@ function ajax_add_article(){
     type: 'post',
     success:function(output){
       //$('#id_main_aff').html(output);
-      alert("add done");
+      alert(output);
     }
   });
 }
@@ -54,9 +52,12 @@ function ajax_add_categorie(){
     data: {categorie:categorie},
     type: 'post',
     success:function(output){
-      //$('#id_main_aff').html(output);
+      $('#id_main_aff').html(output);
       alert(output);
     }
+  });
+}
+
 function ajax_add_auteur(){
   var mail = 'gg@googl.com';
   var nom = 'bobby';

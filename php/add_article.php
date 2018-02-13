@@ -1,5 +1,6 @@
 <!-- Intergration de "auteur" dans la bdd -->
 <?php
+
 function insert_article($cnx){
        $titre = $_POST['titre'];
        $texte = $_POST['texte'];
@@ -22,6 +23,7 @@ function insert_article($cnx){
        }
 
 $cnx->close();
+}
 ?>
 
 
@@ -46,4 +48,5 @@ $cnx->close();
             echo "Error: " . $sql . "<br>" . $cnx->error;
             }
         }
+  }
   ?>
