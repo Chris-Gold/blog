@@ -9,10 +9,10 @@
         <div id="idsite" class="container">
           <div class="row">
             <div id="idheadgch" class="col-sm-12 col-lg-4">
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button>
-            
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addart_Modal" data-whatever="@mdo">Add article</button>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addaut_Modal" data-whatever="@fat">Add auteur</button>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addcat_Modal" data-whatever="@getbootstrap">Add catégorie</button>
+
             </div>
             <div id="idheadmil" class="col-sm-12 col-lg-4 text-center animated flash">CSA BLOG</div>
             <div id="idheaddrt" class="col-sm-12 col-lg-4">
