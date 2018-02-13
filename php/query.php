@@ -22,7 +22,6 @@ $result = mysqli_query($cnx, $reqAffUp);
 
 if(mysqli_num_rows($result) > 0){
   while ($row = mysqli_fetch_assoc($result)){
-    mysqli_set_charset($cnx, "utf8");
     echo "<div id=\"".$row['id_article']."\" onclick=\"ajax_aff_complet(this.id)\">";
     echo "<li class=\"list-group-item disabled\">Article n°".$row['id_article']." : ".$row['titre']."</li>";
     echo "<li class=\"list-group-item\">Categorie: ".$row['categorie']."</li>";
