@@ -41,7 +41,7 @@ function ajax_add_article(){
     type: 'post',
     success:function(output){
       //$('#id_main_aff').html(output);
-      alert(output);
+      //alert(output);
     }
   });
 }
@@ -53,8 +53,8 @@ function ajax_add_categorie(){
     data: {categorie:categorie},
     type: 'post',
     success:function(output){
-      $('#id_main_aff').html(output);
-      alert(output);
+      //$('#id_main_aff').html(output);
+      //alert(output);
     }
   });
 }
@@ -67,7 +67,7 @@ function ajax_add_auteur(){
     data: {mail:mail,nom:nom},
     type: 'post',
     success:function(output){
-      alert(output);
+      //alert(output);
     }
 
   });

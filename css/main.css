@@ -13,4 +13,10 @@
 #idbody {
   background-color: #bc3203; }
 
+#main_aff {
+  width: 40%;
+  position: fixed;
+  top: 107px;
+  left: 40%; }
+
 /*# sourceMappingURL=main.css.map */
