@@ -2,6 +2,7 @@
 $(document).ready(function(){
   ajax_aff_acceuil();
   ajax_add_article();
+  ajax_add_auteur();
 });
 //Affichage général
 function ajax_aff_acceuil(){
@@ -39,5 +40,19 @@ function ajax_add_article(){
       //$('#id_main_aff').html(output);
       alert("add done");
     }
+  });
+}
+
+function ajax_add_auteur(){
+  var mail = 'gg@googl.com';
+  var nom = 'bobby';
+  $.ajax({
+    url:'php/add_auteur.php',
+    data: {mail:mail,nom:nom},
+    type: 'post',
+    success:function(output){
+      alert(output);
+    }
+
   });
 }
