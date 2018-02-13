@@ -42,6 +42,7 @@ function ajax_add_article(){
     success:function(output){
       //$('#id_main_aff').html(output);
       //alert(output);
+      ajax_aff_acceuil();
     }
   });
 }
@@ -69,6 +70,5 @@ function ajax_add_auteur(){
     success:function(output){
       //alert(output);
     }
-
   });
 }
