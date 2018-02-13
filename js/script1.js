@@ -1,7 +1,7 @@
 // Ouverture de la page
 $(document).ready(function(){
   ajax_aff_acceuil();
-  ajax_add_article();
+  //ajax_add_article();
   //ajax_add_categorie();
   //ajax_add_auteur();
 
@@ -34,6 +34,7 @@ function ajax_add_article(){
   var text = $('#text_art').val();
   var auteur = $('#inputGroupSelect01 option:selected').text();
   var categorie = $('#inputGroupSelect02 option:selected').text();
+  alert(titre+text+auteur+categorie);
   $.ajax({
     url:'php/add_article.php',
     data: {titre:titre,text:text,auteur:auteur,categorie:categorie},
