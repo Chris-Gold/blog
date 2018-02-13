@@ -2,8 +2,8 @@
 $(document).ready(function(){
   ajax_aff_acceuil();
   ajax_add_article();
-  ajax_add_categorie();
-  ajax_add_auteur();
+  //ajax_add_categorie();
+  //ajax_add_auteur();
 
 });
 //Affichage général
@@ -59,8 +59,8 @@ function ajax_add_categorie(){
 }
 
 function ajax_add_auteur(){
-  var mail = 'gg@googl.com';
-  var nom = 'bobby';
+  var mail = $('#add_aut_mail').val();
+  var nom = $('#add_aut_nom').val();
   $.ajax({
     url:'php/add_auteur.php',
     data: {mail:mail,nom:nom},

@@ -51,7 +51,7 @@
 </div>
 
 
-<div class="modal fade" id="addaut_Modal" tabindex="-1" role="dialog" aria-labelledby="addaut_ModalLabel" aria-hidden="true">
+<div class="modal fade" id="addaut_Modal" tabindex="-2" role="dialog" aria-labelledby="addaut_ModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -64,30 +64,29 @@
         <form>
           <div class="form-group">
             <label for="add_aut_mail">Mail</label>
-            <input type="text" class="form-control" id="add_aut_mail" aria-describedby="emailHelp" placeholder="Enter email">
+            <input type="text" class="form-control" id="add_aut_mail" aria-describedby="emailHelp" placeholder="Mail">
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
           </div>
           <div class="form-group">
             <label for="add_aut_nom">Nom</label>
-            <input type="password" class="form-control" id="add_aut_nom" placeholder="Password">
+            <input type="text" class="form-control" id="add_aut_nom" placeholder="Nom">
           </div>
           <div class="form-check">
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Me tenir informé</label>
+            <label class="form-check-label" for="exampleCheck1">Me tenir informé(e)</label>
           </div>
-          <button type="submit" class="btn btn-primary">Add auteur</button>
         </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Send message</button>
+        <button type="button" class="btn btn-primary" onclick="ajax_add_auteur()">Add auteur</button>
       </div>
     </div>
   </div>
 </div>
 
 
-<div class="modal fade" id="addcat_Modal" tabindex="-1" role="dialog" aria-labelledby="addcat_ModalLabel" aria-hidden="true">
+<div class="modal fade" id="addcat_Modal" tabindex="-3" role="dialog" aria-labelledby="addcat_ModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -106,7 +105,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Add Catégorie</button>
+        <button type="button" class="btn btn-primary" onclick="ajax_add_categorie()">Add Catégorie</button>
       </div>
     </div>
   </div>
