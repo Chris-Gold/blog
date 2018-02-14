@@ -52,8 +52,8 @@
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-sm-12 col-lg-3"><ul id="id_list_acc" class="list-group" /ul></div>
-            <div id="main_aff" class="col-sm-12 col-lg-8"><ul id="id_main_aff" /ul></div>
+            <div class="col-sm-12.order-2 col-lg-3"><ul id="id_list_acc" class="list-group" /ul></div>
+            <div id="main_aff" class="col-sm-12.order-1 col-lg-8"><ul id="id_main_aff" /ul></div>
 
           </div>
         </div>
