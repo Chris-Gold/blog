@@ -30,4 +30,10 @@
   font-size: 9px;
   line-height: 0px; }
 
-/*# sourceMappingURL=main.css.map */
+#idbody li, #idbody select, #idbody label, #idbody form {
+  background-color: #f99533;
+  border-color: #e04f00; }
+
+#idbody button {
+  background-color: #e04f00;
+  border-color: #e04f00; }
