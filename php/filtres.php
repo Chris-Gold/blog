@@ -29,7 +29,7 @@ if ($filt!='Choix...') {
   }
 }
 
-echo $req;
+//echo $req;
 
 
 ?>

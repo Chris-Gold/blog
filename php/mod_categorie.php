@@ -1,6 +1,6 @@
 <?php
 include 'link_db.php';
-
+echo 'test';
 $modCat = "SELECT nom FROM categorie";
 
 $resModCat = mysqli_query($cnx, $modCat);
