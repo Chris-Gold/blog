@@ -16,7 +16,7 @@ $reqFiltNomUp = "SELECT * FROM article GROUP BY auteur ASC";
 $reqFiltNomDown = "SELECT * FROM article GROUP BY auteur DESC";
 
 //Affichage des articles de la categorie...
-$req = "SELECT * FROM article WHERE article.categorie= $_POST['cat']";
+$req = "SELECT * FROM article WHERE article.categorie= ";
 
 //Affichage grouper par categorie
 $reqFiltCatUp = "SELECT * FROM article GROUP BY categorie ASC";
