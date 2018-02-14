@@ -42,9 +42,6 @@
             </div>
             <div id="idheadmil" class="col-sm-12 col-lg-5 text-center animated flash">CSA BLOG</div>
             <div id="idheaddrt" class="col-sm-12 col-lg-3 text-center">
-              <button type="button" class="btn btn-primary mr-1 mb-2" data-toggle="modal" data-target="#addart_Modal" data-whatever="@mdo">Add article</button>
-              <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#addaut_Modal" data-whatever="@fat">Add auteur</button>
-              <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#addcat_Modal" data-whatever="@getbootstrap">Add catégorie</button>
 
 
             </div>
@@ -53,7 +50,12 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-12  col-lg-3"><ul id="id_list_acc" class="list-group" /ul></div>
-            <div id="main_aff" class="col-sm-12 order-first order-lg-1 col-lg-8 tabindex="-4""><ul id="id_main_aff" /ul></div>
+            <div id="main_aff" class="col-sm-12 order-first order-lg-1 col-lg-8" tabindex="-4"">
+              <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#addart_Modal" data-whatever="@mdo">Add article</button>
+              <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#addaut_Modal" data-whatever="@fat">Add auteur</button>
+              <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#addcat_Modal" data-whatever="@getbootstrap">Add catégorie</button>
+
+              <ul id="id_main_aff" /ul></div>
 
           </div>
         </div>
