@@ -33,8 +33,8 @@
                 </div>
                 <select class="custom-select" id="sel_filt" onchange="ajax_aff_acceuil()">
                   <option selected>Choix...</option>
-                  <option value="1">Plus récent</option>
-                  <option value="2">Plus ancien</option>
+                  <option value="1">Nouveau</option>
+                  <option value="2">Ancien</option>
                   <option value="3">Random</option>
                 </select>
               </div>

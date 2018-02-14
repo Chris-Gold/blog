@@ -1,9 +1,7 @@
 <?php
 include 'link_db.php';
 
-echo $_POST['cat'];
-echo $_POST['aut'];
-echo $_POST['filt'];
+include 'filtres.php';
 
 //Affichage des articles par date de modification
 $reqAffDown = "SELECT * FROM article ORDER BY date_modif DESC LIMIT 5";
@@ -16,13 +14,13 @@ $reqFiltNomUp = "SELECT * FROM article GROUP BY auteur ASC";
 $reqFiltNomDown = "SELECT * FROM article GROUP BY auteur DESC";
 
 //Affichage des articles de la categorie...
-$req = "SELECT * FROM article WHERE article.categorie= ";
+//$req = "SELECT * FROM article WHERE article.categorie= $_POST[\'cat\']";
 
 //Affichage grouper par categorie
 $reqFiltCatUp = "SELECT * FROM article GROUP BY categorie ASC";
 $reqFiltCatDown = "SELECT * FROM article GROUP BY categorie DESC";
 
-$result = mysqli_query($cnx, $reqAffUp);
+$result = mysqli_query($cnx, $req);
 //Affiche la liste des articles
 
 if(mysqli_num_rows($result) > 0){
