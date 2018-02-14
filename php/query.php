@@ -2,7 +2,7 @@
 include 'link_db.php';
 
 include 'filtres.php';
-
+/*
 //Affichage des articles par date de modification
 $reqAffDown = "SELECT * FROM article ORDER BY date_modif DESC LIMIT 5";
 $reqAffUp = "SELECT * FROM article ORDER BY date_modif ASC LIMIT 5 ";
@@ -18,7 +18,7 @@ $reqFiltNomDown = "SELECT * FROM article GROUP BY auteur DESC";
 
 //Affichage grouper par categorie
 $reqFiltCatUp = "SELECT * FROM article GROUP BY categorie ASC";
-$reqFiltCatDown = "SELECT * FROM article GROUP BY categorie DESC";
+$reqFiltCatDown = "SELECT * FROM article GROUP BY categorie DESC";*/
 
 $result = mysqli_query($cnx, $req);
 //Affiche la liste des articles
