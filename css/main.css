@@ -17,15 +17,15 @@
   width: 40%;
   position: fixed;
   top: 130px;
-  left: 30%; }
+  left: 20%; }
   @media screen and (max-width: 1200px) {
     #main_aff {
-      width: 93%;
+      width: 100%;
       position: static;
-      left: 0px; } }
-  @media screen and (min-width: 300px) {
+      padding-right: 55px; } }
+  @media screen and (min-width: 1200px) {
     #main_aff {
-      left: 150px; } }
+      left: 35%; } }
 
 .ft9 {
   font-size: 9px;

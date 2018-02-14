@@ -41,7 +41,7 @@
 
             </div>
             <div id="idheadmil" class="col-sm-12 col-lg-5 text-center animated flash">CSA BLOG</div>
-            <div id="idheaddrt" class="col-sm-12 col-lg-3">
+            <div id="idheaddrt" class="col-sm-12 col-lg-3 text-center">
               <button type="button" class="btn btn-primary mr-1 mb-2" data-toggle="modal" data-target="#addart_Modal" data-whatever="@mdo">Add article</button>
               <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#addaut_Modal" data-whatever="@fat">Add auteur</button>
               <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#addcat_Modal" data-whatever="@getbootstrap">Add catégorie</button>
