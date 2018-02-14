@@ -8,10 +8,14 @@ $(document).ready(function(){
 });
 //Affichage général
 function ajax_aff_acceuil(){
+  //var cat = $('#sel_cat option:selected').text();
   $.ajax({
     url:'php/query.php',
-//    data: {tab_data:},
-    type: 'get',
+    data: { cat:$('#sel_cat option:selected').text(),
+            aut:$('#sel_aut option:selected').text(),
+            filt:$('#sel_filt option:selected').text()
+    },
+    type: 'post',
     success:function(output){
       $('#id_list_acc').html(output);
     }
