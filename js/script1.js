@@ -41,7 +41,7 @@ function ajax_aff_complet(id_article){
 
 function initart(){
   $('#titre_art').val(' ');
-//  $('#idtexted').html('dsfsdf ');
+  $('#idtexted').val();
   $('#inputGroupSelect01 option:selected').text(' ');
   $('#inputGroupSelect02 option:selected').text(' ');
 }
