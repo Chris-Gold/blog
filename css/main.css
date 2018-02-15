@@ -23,8 +23,7 @@
   @media screen and (max-width: 990px) {
     #main_aff {
       width: 100%;
-      position: static;
-      padding-right: 40px; } }
+      position: static; } }
   #main_aff #id_main_aff {
     padding: 0; }
 
