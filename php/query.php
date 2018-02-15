@@ -22,21 +22,26 @@ $reqFiltCatDown = "SELECT * FROM article GROUP BY categorie DESC";*/
 
 $result = mysqli_query($cnx, $req);
 //Affiche la liste des articles
+
 echo "<div class=\"row\">";
-echo "<div class=\"col-sm-6 col-lg-12\">";
 if(mysqli_num_rows($result) > 0){
+echo "<div class=\"col-sm-6 col-lg-12\">";
   while ($row = mysqli_fetch_assoc($result)){
+
         echo "<div id=\"".$row['id_article']."\" onclick=\"ajax_aff_complet(this.id)\">";
         echo "<li class=\"list-group-item disabled \">".$row['titre']."</li>";// Article n°".$row['id_article']." : ".$row['titre']."</li>";
         echo "<li class=\"list-group-item ft9\">Categorie: ".$row['categorie']."</li>";
         echo "<li class=\"list-group-item ft9\">Créé par ".$row['auteur']." le ".$row['date_crea']."</li>";
         echo "<li class=\"list-group-item mb-4 \">".substr($row['texte'],0,65)."...</li>";
         echo "</div>";
+echo "</div>";
 
   };
+      echo "</div>";
+
 }
 echo "</div>";
-echo "</div>";
+
 
 
 

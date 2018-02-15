@@ -39,6 +39,13 @@ function ajax_aff_complet(id_article){
   });
 }
 
+function initart(){
+  $('#titre_art').val(' ');
+//  $('#idtexted').html('dsfsdf ');
+  $('#inputGroupSelect01 option:selected').text(' ');
+  $('#inputGroupSelect02 option:selected').text(' ');
+}
+
 function ajax_add_article(){
   var titre = $('#titre_art').val();
   //var text = $('#text_art').val();

@@ -52,7 +52,7 @@
             <div class="col-sm-12  col-lg-3"><ul id="id_list_acc" class="list-group" /ul></div>
             <div id="main_aff" class="col-sm-12 order-first order-lg-1 col-lg-8" tabindex="-4">
               <div id="buttons">
-                <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#addart_Modal" data-whatever="@mdo">Add article</button>
+                <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#addart_Modal" data-whatever="@mdo" onclick="initart()">Add article</button>
                 <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#addaut_Modal" data-whatever="@fat">Add auteur</button>
                 <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#addcat_Modal" data-whatever="@getbootstrap">Add catégorie</button>
             </div>
