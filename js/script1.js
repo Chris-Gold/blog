@@ -9,8 +9,12 @@ $(document).ready(function(){
 // toggle descriptarticlepreview
 function toggle(id){
 
-  var idf = '#iddiv'+id;
+  var idf = '#id'+id;
+  //var idff = '#'+id;
+  //var idfff =
   $(idf).toggle();
+  //$(idff).toggle();
+  //$(idf).toggle();
 }
 // Go top the site
 $(document).ready(function() {
