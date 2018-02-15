@@ -1,14 +1,25 @@
+.box-preview {
+  display: none; }
+
 .main-container {
   max-width: 1700px;
   margin-left: auto;
   margin-right: auto; }
 
-#idheadmil {
-  font-size: 37px;
+.titlesit {
+  font-size: 29px;
   font-weight: bold;
   padding: 15px;
   margin: 10px;
   color: #f99533; }
+
+#gotop {
+  top: 10px;
+  left: 10px;
+  position: fixed;
+  border-radius: 50px;
+  height: 50px;
+  width: 50px; }
 
 #idbody {
   background-color: #bc3203; }
@@ -16,7 +27,6 @@
 #main_aff {
   width: 70%;
   position: fixed;
-  top: 100px;
   left: 34%; }
   #main_aff #buttons {
     text-align: center; }

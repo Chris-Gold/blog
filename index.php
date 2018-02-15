@@ -9,6 +9,7 @@
         <div id="idsite" class="container">
           <div class="row mt-2">
             <div id="idheadgch" class="col-sm-12 col-lg-3">
+              <div class="titlesit text-center animated flash">CSA BLOG</div>
               <div class="input-group mb-3">
                   <div class="input-group-prepend">
                   <label class="input-group-text" for="sel_cat">Catégorie</label>
@@ -39,28 +40,27 @@
                 </select>
               </div>
 
+              <ul id="id_list_acc" class="list-group" /ul>
             </div>
-            <div id="idheadmil" class="col-sm-12 col-lg-5 text-center animated flash">CSA BLOG</div>
-            <div id="idheaddrt" class="col-sm-12 col-lg-3 text-center">
+              <div id="main_aff" class="col-sm-12 order-first order-lg-1 col-lg-8" tabindex="-4">
+                <div id="buttons">
+                  <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#addart_Modal" data-whatever="@mdo" onclick="initart()">Add article</button>
+                  <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#addaut_Modal" data-whatever="@fat">Add auteur</button>
+                  <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#addcat_Modal" data-whatever="@getbootstrap">Add catégorie</button>
+                </div>
+
+                <ul  id="id_main_aff" /ul>
+
+              </div>
+
+              <a id="gotop" href="#top">GOTOP</a>
+
 
 
             </div>
           </div>
         </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12  col-lg-3"><ul id="id_list_acc" class="list-group" /ul></div>
-            <div id="main_aff" class="col-sm-12 order-first order-lg-1 col-lg-8" tabindex="-4">
-              <div id="buttons">
-                <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#addart_Modal" data-whatever="@mdo" onclick="initart()">Add article</button>
-                <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#addaut_Modal" data-whatever="@fat">Add auteur</button>
-                <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#addcat_Modal" data-whatever="@getbootstrap">Add catégorie</button>
-            </div>
-              <ul id="id_main_aff" /ul></div>
 
-          </div>
-        </div>
-      </div>
       <!-- modalz -->
       <?php include 'includes/modalz.html'  ?>
 

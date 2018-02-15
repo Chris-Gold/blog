@@ -23,18 +23,19 @@ $result = false;
 $result = mysqli_query($cnx, $req);
 mysqli_close($cnx);
 //Affiche la liste des articles
-$bugfix="...</div>";
 echo "<div class=\"row\">";
 if(mysqli_num_rows($result) > 0){
 
   while ($row = mysqli_fetch_assoc($result)){
-    echo "<div class=\"col-sm-6 col-lg-12 box-preview\">";
-        echo "<div id=\"".$row['id_article']."\" onclick=\"ajax_aff_complet(this.id)\">";
-        echo "<li class=\"list-group-item disabled \">".$row['titre']."</li>";
+    echo "<div class=\"col-sm-6 col-lg-12 \">";
+        echo "<div>";
+        echo "<li id=\"".$row['id_article']."\" class=\"list-group-item disabled \" onclick=\"ajax_aff_complet(this.id)\">".$row['titre']."</li>";
         echo "<li class=\"list-group-item ft9\">Categorie: ".$row['categorie']."</li>";
         echo "<li class=\"list-group-item ft9\">Créé par ".$row['auteur']." le ".$row['date_crea']."</li>";
         //echo "<li class=\"list-group-item mb-4 \">".substr($row['texte'],0,65).$bugfix."</li>";
-        echo "<div class=\"container-fluid\"><li class=\"list-group-item mb-4 \">".$row['texte']."</div></li>";
+        echo "<div tabindex=\"5\" id=\"".$row['id_article']."\" onclick=\"toggle(this.id)\">plus";
+        echo "<div id=\"iddiv".$row['id_article']."\" class=\"container-fluid box-preview\"><li class=\"list-group-item mb-4 \">".$row['texte']."</div></li>";
+        echo "</div>";
         echo "</div>";
     echo "</div>";
 

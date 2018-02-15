@@ -6,6 +6,19 @@ $(document).ready(function(){
   //ajax_add_auteur();
 
 });
+// toggle descriptarticlepreview
+function toggle(id){
+
+  var idf = '#iddiv'+id;
+  $(idf).toggle();
+}
+// Go top the site
+$(document).ready(function() {
+     $('a[href=#top]').click(function(){
+          $('html, body').animate({scrollTop:0}, 'slow');
+          return false;
+     });
+});
 //editor
 $(function(){
   $('#edit').froalaEditor({
@@ -35,6 +48,10 @@ function ajax_aff_complet(id_article){
     type: 'post',
     success:function(output){
       $('#id_main_aff').html(output);
+      $('html, body').animate({
+          scrollTop: $("#main_aff").offset().top
+      }, 200);
+      return false;
     }
   });
 }
