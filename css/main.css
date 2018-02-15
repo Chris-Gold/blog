@@ -25,6 +25,8 @@
       width: 100%;
       position: static;
       padding-right: 40px; } }
+  #main_aff #id_main_aff {
+    padding: 0; }
 
 .ft9 {
   font-size: 9px;
@@ -37,3 +39,8 @@
 #idbody button {
   background-color: #e04f00;
   border-color: #e04f00; }
+
+#mceu_31 {
+  display: none; }
+
+/*# sourceMappingURL=main.css.map */
