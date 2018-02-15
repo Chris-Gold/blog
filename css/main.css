@@ -16,7 +16,7 @@
 #main_aff {
   width: 80%;
   position: fixed;
-  top: 130px;
+  top: 100px;
   left: 30%; }
   #main_aff #buttons {
     text-align: center; }
@@ -36,10 +36,13 @@
   border-color: #e04f00; }
 
 #idbody button {
-  background-color: #e04f00;
   border-color: #e04f00; }
 
 #mceu_31 {
   display: none; }
+
+#addart_Modal .modal-dialog {
+  max-width: 860px;
+  background-color: white; }
 
 /*# sourceMappingURL=main.css.map */

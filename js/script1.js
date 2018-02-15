@@ -6,6 +6,12 @@ $(document).ready(function(){
   //ajax_add_auteur();
 
 });
+//editor
+$(function(){
+  $('#edit').froalaEditor({
+    language: 'fr'
+  })
+});
 //Affichage général
 function ajax_aff_acceuil(){
   //var cat = $('#sel_cat option:selected').text();
@@ -35,7 +41,8 @@ function ajax_aff_complet(id_article){
 
 function ajax_add_article(){
   var titre = $('#titre_art').val();
-  var text = $('#text_art').val();
+  //var text = $('#text_art').val();
+  var text = $('#idtexted').html();
   var auteur = $('#inputGroupSelect01 option:selected').text();
   var categorie = $('#inputGroupSelect02 option:selected').text();
   //alert(titre+text+auteur+categorie);
