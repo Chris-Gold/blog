@@ -11,5 +11,14 @@ if(mysqli_num_rows($resModAuteur) > 0){
       echo "<option value=\"".$i."\">".$row['nom']."</option>";
     }
   }
-}
+}/*
+include 'inc/inc_fonction_trait_do.php';
+$list=list_auteur();
+if(mysqli_num_rows($list) > 0){
+  while ($row1 =mysqli_fetch_assoc($list)){
+    for ($ii = 0; $ii<sizeof($row1['nom']); $ii++){
+      echo "<option value=\"".$ii."\">".$row1['nom']."</option>";
+    }
+  }
+}*/
 ?>

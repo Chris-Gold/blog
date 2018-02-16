@@ -1,3 +1,4 @@
+<!-- modal ajout article-->
 <div class="modal fade" id="addart_Modal" tabindex="-11" role="dialog" aria-labelledby="addart_ModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -18,9 +19,7 @@
             <textarea class="form-control" id="text_art"></textarea>-->
             <?php include 'includes/editor/editor.html'; ?>
           </div>
-
         </form>
-
             <div class="input-group mb-3">
               <div class="input-group-prepend">
                 <label class="input-group-text" for="inputGroupSelect01">Auteur</label>
@@ -47,8 +46,7 @@
     </div>
   </div>
 </div>
-
-
+<!-- moadal ajout auteur-->
 <div class="modal fade" id="addaut_Modal" tabindex="-12" role="dialog" aria-labelledby="addaut_ModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -77,13 +75,12 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" onclick="ajax_add_auteur()">Add auteur</button>
+        <button type="button" class="btn btn-primary" onclick="ajax_add_auteur()" data-dismiss="modal">Add auteur</button>
       </div>
     </div>
   </div>
 </div>
-
-
+<!--modal ajout de catégorie-->
 <div class="modal fade" id="addcat_Modal" tabindex="-13" role="dialog" aria-labelledby="addcat_ModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -103,7 +100,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" onclick="ajax_add_categorie()">Add Catégorie</button>
+        <button type="button" class="btn btn-primary" onclick="ajax_add_categorie()" data-dismiss="modal">Add Catégorie</button>
       </div>
     </div>
   </div>

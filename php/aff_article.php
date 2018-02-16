@@ -1,12 +1,6 @@
 <?php
-include 'link_db.php';
-
-$id_article = $_POST['id_article'];
-$reqAffArt = "SELECT * FROM article WHERE article.id_article=".$id_article;
-$resFull=false;
-$resFull = mysqli_query($cnx, $reqAffArt);
-mysqli_close($cnx);
-//Affiche la liste des articles
+include 'inc/inc_fonction_trait_do.php';
+$resFull=select_article();
 
 if(mysqli_num_rows($resFull) > 0){
   while ($row = mysqli_fetch_assoc($resFull)){

@@ -1,28 +1,9 @@
 <?php
-include 'link_db.php';
+include 'inc/inc_fonction_trait_do.php';
+//include 'inc/inc_fonction_mysql.php';
+$result = list_article();
+//$tab = sql_a_tableau($result);
 
-include 'filtres.php';
-/*
-//Affichage des articles par date de modification
-$reqAffDown = "SELECT * FROM article ORDER BY date_modif DESC LIMIT 5";
-$reqAffUp = "SELECT * FROM article ORDER BY date_modif ASC LIMIT 5 ";
-
-//Affichage les articles de l'auteur...
-$reqFiltNom = "SELECT * FROM article WHERE article.auteur= ";
-//Affichage grouper par auteurs
-$reqFiltNomUp = "SELECT * FROM article GROUP BY auteur ASC";
-$reqFiltNomDown = "SELECT * FROM article GROUP BY auteur DESC";
-
-//Affichage des articles de la categorie...
-//$req = "SELECT * FROM article WHERE article.categorie= $_POST[\'cat\']";
-
-//Affichage grouper par categorie
-$reqFiltCatUp = "SELECT * FROM article GROUP BY categorie ASC";
-$reqFiltCatDown = "SELECT * FROM article GROUP BY categorie DESC";*/
-$result = false;
-$result = mysqli_query($cnx, $req);
-mysqli_close($cnx);
-//Affiche la liste des articles
 echo "<div class=\"row\">";
 if(mysqli_num_rows($result) > 0){
 
