@@ -1,6 +1,8 @@
 // Ouverture de la page
 $(document).ready(function(){
   ajax_aff_acceuil();
+  ajax_aff_cat('sel_cat');
+  ajax_aff_aut('sel_aut');
 });
 // toggle descript article preview
 function toggle(id){
@@ -18,8 +20,32 @@ $(document).ready(function() {
 $(function(){
   $('#edit').froalaEditor({
     language: 'fr'
-  })
+  });
+  ajax_aff_aut('inputGroupSelect01');
+  ajax_aff_cat('inputGroupSelect02');
 });
+//Affichage des category
+function ajax_aff_cat(id){
+  var idfull = '#'+id;
+  $.ajax({
+    url:'php/mod_categorie.php',
+    type: 'get',
+    success:function(output){
+      $(idfull).html(output);
+    }
+  });
+}
+//Affichage des auteurs
+function ajax_aff_aut(id){
+  var idfull = '#'+id;
+  $.ajax({
+    url:'php/mod_auteur.php',
+    type: 'get',
+    success:function(output){
+      $(idfull).html(output);
+    }
+  });
+}
 //Affichage général des articles listés par categorie auteur et filtre
 function ajax_aff_acceuil(){
   $.ajax({

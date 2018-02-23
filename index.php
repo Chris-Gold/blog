@@ -18,8 +18,7 @@
               </div>
               <!-- selecteur de catégorie lance javascript affichage.js -->
                   <select class="custom-select" id="sel_cat" onchange="ajax_aff_acceuil()">
-                    <option selected>Choix...</option>
-                    <?php include 'php/mod_categorie.php'; ?>
+              // mod_categorie.php
                   </select>
               </div>
               <!-- selecteur d'auteur lance fonction affichage.js -->
@@ -28,8 +27,7 @@
                   <label class="input-group-text" for="sel_aut" >Auteur</label>
                 </div>
                 <select class="custom-select" id="sel_aut" onchange="ajax_aff_acceuil()">
-                  <option selected>Choix...</option>
-                  <?php include 'php/mod_auteur.php'; ?>
+              // mod_auteur.php
                 </select>
               </div>
               <!-- selecteur d'filtres lance fonction affichage.js -->
